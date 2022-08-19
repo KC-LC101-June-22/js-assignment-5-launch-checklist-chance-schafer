@@ -20,7 +20,12 @@ function validateInput(testInput) {
     if(testInput === '') {
         return 'Empty'
     }
-   
+
+    if(testInput === NaN) {
+        return 'Not a Number'
+    } else {
+        return 'Is a Number'
+    }
 }
 
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
