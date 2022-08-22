@@ -50,6 +50,7 @@ function formSubmission(document,/* list,*/event, pilot, copilot, fuelLevel, car
         document.getElementById('pilotStatus').innerHTML = `${pilot} is ready for launch.`
         document.getElementById('copilotStatus').innerHTML = `${copilot} is ready for launch`
 
+        let list = document.getElementById('faultyItems')
         let fuelStatus = document.getElementById('fuelStatus')
         let cargoStatus = document.getElementById('cargoStatus')
         let launchStatus = document.getElementById('launchStatus')
@@ -79,11 +80,11 @@ function formSubmission(document,/* list,*/event, pilot, copilot, fuelLevel, car
             launchStatus.style.color = 'green';
         }
 
-        document.getElementById('faultyItems').style.visibility = 'visible';
+        list.style.visibility = 'visible';
         event.preventDefault();
     }
 
-
+    
 };
 
 async function myFetch() {

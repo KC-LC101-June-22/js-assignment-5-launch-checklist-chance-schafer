@@ -12,7 +12,7 @@ window.addEventListener("load", function() {
         let cargoLevel = document.getElementById('cargoMass').value;
 
         formSubmission(document, event, pilot, copilot, fuelLevel, cargoLevel);
-
+        
     }) 
 
     myFetch();
