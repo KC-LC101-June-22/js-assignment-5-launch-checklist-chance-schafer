@@ -78,7 +78,7 @@ function formSubmission(document/*, list*/,event, pilot, copilot, fuelLevel, car
             cargoStatus.innerHTML = 'Cargo Mass is low enough for launch';
             launchStatus.innerHTML = 'Shuttle is ready for launch';
             launchStatus.style.color = 'green';
-            list.style.visibility = 'hidden';
+            list.style.visibility = 'hidden'
         }
 
         list.style.visibility = 'visible';
