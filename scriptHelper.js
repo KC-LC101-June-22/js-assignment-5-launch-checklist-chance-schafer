@@ -37,7 +37,7 @@ function validateInput(testInput) {
     }
 }
 
-function formSubmission(document,/* list,*/event, pilot, copilot, fuelLevel, cargoLevel) {
+function formSubmission(document/*, list*/,event, pilot, copilot, fuelLevel, cargoLevel) {
 
     if(validateInput(pilot) === 'Empty' || validateInput(copilot) === 'Empty' || validateInput(fuelLevel) === 'Empty' || validateInput(cargoLevel) === 'Empty') {
         alert('All fields are required!');
@@ -78,6 +78,7 @@ function formSubmission(document,/* list,*/event, pilot, copilot, fuelLevel, car
             cargoStatus.innerHTML = 'Cargo Mass is low enough for launch';
             launchStatus.innerHTML = 'Shuttle is ready for launch';
             launchStatus.style.color = 'green';
+            list.style.visibility = 'hidden';
         }
 
         list.style.visibility = 'visible';
